@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+            <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>     
+            <script type="text/javascript" src="javascirpt/main.js"></script>
+
+            <script language="JavaScript" type="text/javascript" src="javascirpt/jquery-1.12.4.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <title>New Zealand</title>
+     </head>
+     
+     <body>
+              <div id="mapid"></div>
+              <label>Which town would you like to visit?</label><br>
+              <input type="text" id="townTextBox"/>
+              <button onclick="geocode_town(this.value)" value="submit">Submit</button><br> 
+              <div id="interestPlace"> 
+                            <label>Towns Viewed:</label>  <!--container for viewd town name-->
+                            <div id="listViewedTown"></div>
+              </div>
+              <div id="sunrise"></div><br>
+              <div id="cloud"></div><br>
+              
+
+    <script>
+    initMap();
+    </script>
+     
+    </body>
+</html>

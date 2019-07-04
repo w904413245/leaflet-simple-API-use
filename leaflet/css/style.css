@@ -1,0 +1,14 @@
+#mapid { 
+    width: 600px; height: 400px
+ }
+ html, body {
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=button], [type=reset]{
+	cursor: pointer;
+	border: none;
+	background-color: white;
+}
